@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>" máy tính"</title>
+</head>
+<body>
+<br>
+<form>
+    <table width="5%">
+     <tr>
+        <strong>Caculator</strong>
+         <th><input type="number" id="number1"></th>
+         <th><input type="number" id="number2"> </th>
+     </tr>
+    </table>
+
+    <br>Reslut Division: <output type="number" id="kq"></output></br>
+</form>
+<button onclick="addition()">addition(+)</button>
+<button onclick="subtraction()">subtraction(-)</button>
+<button onclick="multiplication()">multiplication(*)</button>
+<button onclick="division()">division(/)</button>
+<script>
+    function addition(){
+        var a = parseFloat(number1.value);
+        var b = parseFloat(number2.value);
+        var c=a+b;
+        kq.value=c;}
+    function subtraction() {
+        var a = parseFloat(number1.value);
+        var b = parseFloat(number2.value);
+        var c=a-b;
+        kq.value=c;}
+    function multiplication() {
+        var a = parseFloat(number1.value);
+        var b = parseFloat(number2.value);
+        var c=a*b;
+        kq.value=c;}
+    function division() {
+        var a = parseFloat(number1.value);
+        var b = parseFloat(number2.value);
+        var c=a/b;
+        kq.value=c;}
+</script>
+</body>
+</html>
